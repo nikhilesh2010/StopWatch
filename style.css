@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Vibur&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./Images/Bg.jpg) fixed no-repeat center;
+    background-size: cover;
+}
+/*************************************** Card Styles *******************************************/
+.stopwatch {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #fff;
+    font-family: 'Courier Prime', monospace;
+    margin: 13rem auto 0;
+    box-shadow: 0 10px 10px #ffffff37;
+}
+/*************************************** Title Styles *******************************************/
+.neonText {
+    font-family: 'Vibur', cursive;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+}
+/*************************************** Watch Styles *******************************************/
+.neonText2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa;
+}
+/*************************************** Buttons Styles *******************************************/
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 0rem 2rem;
+}
+.neonBtn {
+    background: none;
+    font-size: larger;
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    align-items: center;
+    color: #fff;
+    padding: 0.4em;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
+}
+/*************************************** Media Quieres Styles *******************************************/
+@media only screen and (max-width: 1200px) {
+    .stopwatch {
+        width: 30%;
+        padding: 3rem 1rem;
+        margin: 13rem auto 0;
+    }
+    .btns {
+        margin: 0px auto;
+        padding: 0rem;
+    }
+    .neonText2 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .neonBtn {
+        background: none;
+        font-size: larger;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .stopwatch {
+        width: 30%;
+        padding: 3rem 1rem;
+        margin: 13rem auto 0;
+    }
+    .btns {
+        margin: 0px auto;
+        padding: 0rem;
+    }
+    .neonText2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .neonBtn {
+        background: none;
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .stopwatch {
+        width: 40%;
+        padding: 3rem 1rem;
+        margin: 13rem auto 0;
+    }
+    .btns {
+        margin: 0px auto;
+        padding: 0rem;
+    }
+    .neonText2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .neonBtn {
+        background: none;
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 576px){
+    .stopwatch {
+        width: 40%;
+        padding: 3rem 1rem;
+        margin: 13rem auto 0;
+    }
+    .btns {
+        margin: 0px auto;
+        padding: 0rem;
+    }
+    .neonText2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .neonBtn {
+        background: none;
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 480px){
+    .stopwatch {
+        width: 70%;
+        padding: 3rem 1rem;
+        margin: 8rem auto 0;
+    }
+    .btns {
+        margin: 0px auto;
+        padding: 0rem;
+        flex-direction: column;
+    }
+    .neonText2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .neonBtn {
+        background: none;
+        font-size: small;
+        margin: 0.5rem auto;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 320px){
+    .stopwatch {
+        width: 80%;
+        padding: 3rem 1rem;
+        margin: 8rem auto 0;
+    }
+    .btns {
+        margin: 0px auto;
+        padding: 0rem;
+        flex-direction: column;
+    }
+    .neonText2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .neonBtn {
+        background: none;
+        font-size: small;
+        margin: 0.5rem auto;
+        width: 60%;
+    }
+}
+/*************************************** Animation Effect Styles *******************************************/
+.pulsate {
+    animation: pulsate 1.5s infinite alternate;     
+}
+@keyframes pulsate {
+    
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;   
+    }
+    0% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #0fa,
+        0 0 45px #0fa,
+        0 0 55px #0fa,
+        0 0 70px #0fa,
+        0 0 80px #0fa;
+    }
+}
+  
